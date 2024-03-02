@@ -6,6 +6,6 @@ Feature: Swag Labs - Login
     When user login with "standard_user" credentials
     Then user should see homepage
   
-  Scenario Outline: As a locked_out_user, I want to login succesfully
+  Scenario Outline: As a locked_out_user, I should get error message
     When user login with "locked_out_user" credentials
     Then user should see error "Epic sadface: Sorry, this user has been locked out."
